@@ -195,12 +195,7 @@ a {
    4. PROFILE IMAGE
 ================================= */
 
-.hero-image-wrapper {
-    position: relative;
-    max-width: 380px;
-    width: 100%;
-    justify-self: center;
-}
+
 
 .profile-image {
     display: block;
@@ -506,9 +501,7 @@ footer p + p {
         gap: 55px;
     }
 
-    .hero-image-wrapper {
-        max-width: 320px;
-    }
+    
 
     .profile-image {
         height: 390px;
@@ -1125,5 +1118,29 @@ footer p + p {
     height: auto;
     object-fit: cover;
     border: none !important;
+    box-shadow: none !important;
+}
+
+/* REMOVE ALL DECORATIVE PROFILE IMAGE FRAMES */
+
+.hero-image-wrapper::before,
+.hero-image-wrapper::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.hero-image-wrapper {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+.hero-image-wrapper img {
+    border: none !important;
+    outline: none !important;
     box-shadow: none !important;
 }
