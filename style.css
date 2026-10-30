@@ -913,3 +913,182 @@ footer p + p {
         margin: 18px 0 0;
     }
 }
+
+/* RESEARCH EXPERIENCE */
+
+.experience-section {
+    padding: 100px 18px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.experience-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #172f50;
+    margin: 28px 0 18px;
+}
+
+.experience-intro {
+    color: #64748b;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.experience-card {
+    border: 1px solid #e2e8f0;
+    padding: 30px;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.experience-duration {
+    color: #356db1;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.experience-card h3 {
+    color: #172f50;
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin: 20px 0 8px;
+}
+
+.experience-location,
+.experience-supervisor {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.experience-card h4 {
+    color: #172f50;
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.experience-card ul {
+    padding-left: 20px;
+    color: #475569;
+    line-height: 1.8;
+}
+
+.experience-card li {
+    margin-bottom: 10px;
+}
+
+.experience-supervisor {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .experience-list {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-section {
+        padding: 65px 18px;
+    }
+}
+
+/* TECHNICAL SKILLS - ACADEMIC GRID DESIGN */
+
+.skills-section {
+    background: #f7f5f1;
+    padding: 65px 18px;
+    max-width: 100%;
+}
+
+.skills-heading {
+    max-width: 1200px;
+    margin: 0 auto 22px;
+    color: #172f50;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.skills-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: #ded8cf;
+    border: 1px solid #ded8cf;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.skill-card {
+    background: #ffffff;
+    padding: 27px 30px;
+}
+
+.skill-card h3,
+.skills-cv h3 {
+    color: #111827;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0 0 9px;
+}
+
+.skill-card p,
+.skills-cv p {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.skills-cv {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 30px;
+    border-bottom: 1px solid #ded8cf;
+}
+
+.cv-download-button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border: 1px solid #356db1;
+    border-radius: 4px;
+    color: #356db1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.25s ease;
+}
+
+.cv-download-button:hover {
+    background: #356db1;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card,
+    .skills-cv {
+        padding: 23px 20px;
+    }
+
+    .skill-card h3,
+    .skills-cv h3 {
+        font-size: 1.15rem;
+    }
+}
