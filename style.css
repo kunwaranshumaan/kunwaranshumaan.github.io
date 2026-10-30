@@ -1086,61 +1086,35 @@ footer p + p {
     }
 }
 
-/* FIX PROFILE IMAGE ALIGNMENT */
-
-.hero-image-wrapper {
-    overflow: hidden;
-}
-
-.hero-image-wrapper img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: none !important;
-    position: static;
-    margin: 0;
-}
 
 /* CLEAN PROFILE IMAGE */
 
 .hero-image-wrapper {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    background: transparent !important;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
 }
 
-.hero-image-wrapper img {
+.profile-image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 460px;
     object-fit: cover;
-    border: none !important;
-    box-shadow: none !important;
+    object-position: center;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 4px;
 }
 
-/* REMOVE ALL DECORATIVE PROFILE IMAGE FRAMES */
-
-.hero-image-wrapper::before,
-.hero-image-wrapper::after {
-    display: none !important;
-    content: none !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.hero-image-wrapper {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    padding: 0 !important;
-}
-
-.hero-image-wrapper img {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
+@media (max-width: 800px) {
+    .profile-image {
+        height: 390px;
+    }
 }
