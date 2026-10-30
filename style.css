@@ -742,3 +742,174 @@ footer p + p {
         font-size: 28px;
     }
 }
+
+/* =================================
+   12. PUBLICATIONS PAGE
+================================= */
+
+.publication-hero {
+    max-width: 1130px;
+    margin: auto;
+    padding: 100px 35px 70px;
+}
+
+.publication-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 65px);
+    line-height: 1.2;
+    max-width: 850px;
+}
+
+.publication-hero h1 span {
+    color: var(--blue);
+}
+
+.publication-hero > p {
+    color: var(--text);
+    max-width: 700px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.publication-list {
+    max-width: 1130px;
+    margin: auto;
+    padding: 25px 35px 80px;
+}
+
+.publication-card {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 35px 0;
+    margin-bottom: 55px;
+}
+
+.publication-status {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 11px;
+    border-radius: 3px;
+    margin-bottom: 18px;
+}
+
+.published {
+    background: #e9f5ee;
+    color: #287348;
+}
+
+.under-review {
+    background: #fff4df;
+    color: #986414;
+}
+
+.publication-card h2 {
+    max-width: 850px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    line-height: 1.45;
+    margin-bottom: 14px;
+}
+
+.journal-name {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+
+.publication-card > p:not(.journal-name) {
+    color: var(--text);
+    font-size: 14px;
+    max-width: 800px;
+}
+
+.publication-links {
+    margin-top: 22px;
+    font-size: 13px;
+    color: var(--blue);
+}
+
+.publication-links a {
+    font-weight: 700;
+}
+
+.publication-links a:hover {
+    text-decoration: underline;
+}
+
+.publication-note {
+    margin-top: 18px;
+    font-size: 11px !important;
+    color: var(--muted) !important;
+}
+
+.manuscript-heading {
+    margin-top: 50px;
+}
+
+/* =================================
+   13. ACADEMIC CV SECTION
+================================= */
+
+.cv-section {
+    background: var(--light-blue);
+    padding: 75px max(calc((100% - 1060px)/2), 35px);
+}
+
+.cv-section h2 {
+    max-width: 700px;
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.cv-section > p {
+    max-width: 700px;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 27px;
+}
+
+.cv-download {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.cv-download:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 650px) {
+
+    .publication-hero {
+        padding: 65px 23px 45px;
+    }
+
+    .publication-list {
+        padding: 20px 23px 55px;
+    }
+
+    .publication-card h2 {
+        font-size: 23px;
+    }
+
+    .cv-section {
+        padding: 55px 23px;
+    }
+
+    .cv-section h2 {
+        font-size: 28px;
+    }
+
+    .cv-download {
+        margin: 18px 0 0;
+    }
+}
